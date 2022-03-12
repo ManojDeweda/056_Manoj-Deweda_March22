@@ -1,0 +1,1504 @@
+                                           // Manoj Deweda CDAC Khargar
+//............................................................................................................................
+                                                  Assignment 3
+                                                                                            Date: 05/03/2022
+//.............................................................................................................................
+/*
+Assignment 3 Q1 Pattern 1
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5 
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q1
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			for(int j=1;j<=i;j++)
+			System.out.print(j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+//.............................................................................................................................
+/*
+Assignment 3 Q1 Pattern 2
+A
+A B
+A B C
+A B C D
+A B C D E
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q2
+{
+    public static void main(String args[])
+	{	
+		for(int i=65;i<70;i++)
+		{
+			for(char j=65;j<=i;j++)
+			System.out.print(j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+/*
+Assignment 3 Q1 Pattern 3
+*
+* *
+* * *
+* * * *
+* * * * *
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q3
+{
+    public static void main(String args[])
+	{	
+		for(int i=0;i<5;i++)
+		{
+			for(char j=0;j<=i;j++)
+			System.out.print("* ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+/*
+Assignment 3 Q1 Pattern 4
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q4
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			for(int j=1;j<=i;j++)
+			System.out.print(i+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+
+//.............................................................................................................................
+/*
+Assignment 3 Q1 Pattern 5
+A
+B B
+C C C
+D D D D
+E E E E E
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q5
+{
+    public static void main(String args[])
+	{	
+		for(char i=65;i<70;i++)
+		{
+			for(char j=65;j<=i;j++)
+			System.out.print(i+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+
+/*
+Assignment 3 Q1 Pattern 6
+           *
+         * *
+       * * *
+     * * * *
+   * * * * *
+
+*/
+import java.io.*;
+
+class A3q6
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{ 
+	        for(int k=5;k>=i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern 7
+     1
+    1 2
+   1 2 3
+  1 2 3 4
+ 1 2 3 4 5
+
+*/
+import java.io.*;
+
+class A3q7
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{ 
+	        for(int k=5;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print(+j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern 8
+     5
+    4 5
+   3 4 5
+  2 3 4 5
+ 1 2 3 4 5
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q8
+{
+    public static void main(String args[])
+	{	
+		for(int i=5;i>=1;i--)
+		{ 
+	        for(int k=1;k<i;k++)
+			System.out.print(" ");	
+			for(int j=i;j<=5;j++)
+			System.out.print(+j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern 9
+     A
+    A B
+   A B C
+  A B C D
+ A B C D E
+
+*/
+import java.io.*;
+class A3q9
+{
+    public static void main(String args[])
+	{	
+		for(int i=65;i<70;i++)
+		{
+			for(int k=i;k<=70;k++)
+			System.out.print(" ");	
+			for(char j=65;j<=i;j++)
+			System.out.print(j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern 10
+     E
+    D E
+   C D E
+  B C D E
+ A B C D E
+
+*/
+import java.io.*;
+class A3q10
+{
+    public static void main(String args[])
+	{	
+		for(char i=69;i>=65;i--)
+		{
+			for(char k=i;k>65;k--)
+			System.out.print(" ");	
+			for(char j=i;j<=69;j++)
+			System.out.print(j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern 11
+    *
+   ***
+  *****
+ *******
+*********
+
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q11
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{ 
+	        for(int k=5;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print("* ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern 12
+     1
+    2 2
+   3 3 3
+  4 4 4 4
+ 5 5 5 5 5
+*/
+import java.io.*;
+class A3q12
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{ 
+	        for(int k=5;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print(i+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+/*
+Assignment 3 Q1 Pattern13
+     A
+    B B
+   C C C
+  D D D D
+ E E E E E
+
+*/
+import java.io.*;
+class A3q13
+{
+    public static void main(String args[])
+	{	
+		for(char i=65;i<70;i++)
+		{
+			for(char k=i;k<=70;k++)
+			System.out.print(" ");	
+			for(char j=65;j<=i;j++)
+			System.out.print(i+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern 14
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+*/
+import java.io.*;
+class A3q14
+{
+    public static void main(String args[])
+	{	
+		for(int i=5;i>=1;i--)
+		{ 
+	        
+			for(int j=1;j<=i;j++)
+			System.out.print(j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern15
+5 4 3 2 1
+5 4 3 2
+5 4 3
+5 4
+5
+*/
+import java.io.*;
+class A3q15
+{
+    public static void main(String args[])
+	{	
+		for(int i=5;i>=1;i--)
+		{ 
+	        for(int j=i;j>=1;j--)
+			System.out.print(j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern16
+5
+5 4
+5 4 3
+5 4 3 2
+5 4 3 2 1
+*/
+import java.io.*;
+class A3q16
+{
+    public static void main(String args[])
+	{	
+		for(int i=5;i>=1;i--)
+		{ 
+	        for(int j=5;j>=i;j--)
+			System.out.print(j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+/*Assignment 3 Q1 Pattern17
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+*/
+import java.io.*;
+ class A3q17
+{
+    public static void main(String args[])
+	{	
+	   int k=1;	
+		for(int i=1;i<=5;i++)
+		{ 
+              
+	        for(int j=1;j<=i;j++)
+			{	
+			System.out.print(k+" ");
+			
+			k++;
+		    }
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q1 Pattern18
+
+A B C D E
+A B C D
+A B C
+A B
+A
+
+*/
+import java.io.*;
+class A3q18
+{
+    public static void main(String args[])
+	{	
+		for(char i=70;i>65;i--)
+		{
+			for(char j=65;j<i;j++)
+			System.out.print(j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................                                       
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 1
+
+*
+**
+***
+****
+*****
+
+*/
+import java.io.*;
+class A3q2p1
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			for(char j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 2
+    *
+   **
+  ***
+ ****
+*****
+*/
+import java.io.*;
+class A3q2p2
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			 for (int k=1;k<=5-i;k++)
+			System.out.print(" ");
+			for(int j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 3
+*****
+****
+***
+**
+*
+*/
+import java.io.*;
+class A3q2p3
+{
+    public static void main(String args[])
+	{	
+		for(int i=5;i>=1;i--)
+		{
+			 
+			for(int j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 4
+*****
+ ****
+  ***
+   **
+    *
+*/
+import java.io.*;
+class A3q2p4
+{
+    public static void main(String args[])
+	{	
+		for(int i=5;i>=1;i--)
+		{
+			 for(int k=1;k<=5-i;k++)
+				System.out.print(" "); 
+			for(int j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 5
+    *
+   ***
+  *****
+ *******
+*********
+*/
+import java.io.*;
+class A3q2p5
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			 for(int k=1;k<=5-i;k++)
+				System.out.print(" "); 
+			for(int j=1;j<(i*2);j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+/*
+Assignment 3 Q2 Pattern 6
+ *********
+  *******
+   *****
+    ***
+     *
+*/
+import java.io.*;
+class A3q2p6
+{
+    public static void main(String args[])
+	{	
+		for(int i=5;i>=1;i--)
+		{
+			 for(int k=1;k<=5-i;k++)
+				System.out.print(" "); 
+			for(int j=1;j<(i*2);j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 7
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+*/
+import java.io.*;
+class A3q2p7
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=4;i++)
+		{
+			 for(int k=1;k<=5-i;k++)
+				System.out.print(" "); 
+			for(int j=1;j<(i*2);j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+		
+		for(int i=5;i>=1;i--)
+		{
+			 for(int k=1;k<=5-i;k++)
+				System.out.print(" "); 
+			for(int j=1;j<(i*2);j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+
+/*
+Assignment 3 Q2 Pattern 8
+*
+**
+**
+***
+****
+*****
+****
+***
+**
+*
+
+
+*/
+import java.io.*;
+class A3q2p8
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			for(char j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+		
+		for(int i=4;i>=1;i--)
+		{
+			for(char j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+/*
+Assignment 3 Q2 Pattern 9
+     *
+    **
+   ***
+  ****
+ *****
+  ****
+   ***
+    **
+     *
+*/
+import java.io.*;
+class A3q2p9
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			for (int k=1;k<=5-i;k++)
+			System.out.print(" ");
+			for(char j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+		
+		for(int i=4;i>=1;i--)
+		{
+			for (int k=1;k<=5-i;k++)
+			System.out.print(" ");
+			for(char j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+/*
+Assignment 3 Q2 Pattern 10
+    *****
+   *****
+  *****
+ *****
+*****
+*/
+import java.io.*;
+class A3q2p10
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			for (int k=1;k<=5-i;k++)
+			System.out.print(" ");
+			for(char j=1;j<=5;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+		
+		
+	}
+}
+
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 11
+ *****
+  *****
+   *****
+    *****
+     *****
+*/
+import java.io.*;
+class A3q2p11
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			for (int k=1;k<=i;k++)
+			System.out.print(" ");
+			for(char j=1;j<=5;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+		
+		
+	}
+}
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 12
+*****
+****
+***
+**
+*
+**
+***
+****
+*****
+*/
+import java.io.*;
+class A3q2p12
+{
+    public static void main(String args[])
+	{	
+		for(int i=5;i>1;i--)           // this will print up to line 4 that is 2 *
+		{
+			
+			for(char j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+		
+		for(int i=1;i<=5;i++)   // this loop will print from * to 5*
+		{
+			
+			for(char j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 13
+ *****
+  ****
+   ***
+    **
+     *
+    **
+   ***
+  ****
+ *****
+ */
+import java.io.*;
+class A3q2p13
+{
+    public static void main(String args[])
+	{	
+		for(int i=5;i>1;i--)
+		{
+			 for(int k=1;k<=5-i;k++)
+				System.out.print(" "); 
+			for(int j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+		
+		for(int i=1;i<=5;i++)
+		{
+			 for(int k=1;k<=5-i;k++)
+				System.out.print(" "); 
+			for(int j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pyramid pttern 14
+     
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+*/
+import java.io.*;
+
+class A3q2p14
+{
+    public static void main(String args[])
+	{	
+	   for(int i=5;i>=1;i--)    // for upper inverted pyramid 
+		{ 
+	        for(int k=5;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print("* ");
+			
+			System.out.println();	
+		}
+	   
+	   for(int i=2;i<=5;i++)     // strat printing from two star for lower pyramid 
+		{ 
+	        for(int k=5;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print("* ");
+			
+			System.out.println();	
+		}
+	
+		
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 15
+
+*
+**
+* *
+*  *
+*****
+
+*/
+import java.io.*;
+class A3q2p15
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			for(int j=1;j<=5;j++)
+			{	
+			 if ((i==5)||(j==1)||(i==j))	
+			  System.out.print("*");	
+		     else
+			  System.out.print(" ");
+		     }		  
+		System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q2 Pattern 16
+
+     *
+    **
+   * *
+  *  *
+ *****
+
+*/
+import java.io.*;
+class A3q2p16
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=5;i++)
+		{
+			for (int k=5;k>i;k--)
+				System.out.print(" ");
+			for(int j=1;j<=i;j++)
+			{	
+			  if ((i==5)||(j==1)||(j==i))	
+			    System.out.print("*");	
+		      else
+                System.out.print(" ");	   
+          	}
+		   System.out.println();	
+		}
+	}
+}
+//.............................................................................................................................
+//.............................................................................................................................
+//.............................................................................................................................
+
+
+/*
+Assignment 3 Q3 Pyramid pttern 1
+     
+        1
+       2 2
+      3 3 3
+     4 4 4 4
+    5 5 5 5 5
+   6 6 6 6 6 6
+  7 7 7 7 7 7 7
+ 8 8 8 8 8 8 8 8
+9 9 9 9 9 9 9 9 9
+
+*/
+import java.io.*;
+
+class A3q3p1
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=9;i++)
+		{ 
+	        for(int k=9;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print(+i+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+/*
+Assignment 3 Q3 Pyramid pttern 2
+     
+        1
+       1 2
+      1 2 3
+     1 2 3 4
+    1 2 3 4 5
+   1 2 3 4 5 6
+  1 2 3 4 5 6 7 
+ 1 2 3 4 5 6 7 8 
+1 2 3 4 5 6 7 8 9
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q3p2
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=9;i++)
+		{ 
+	        for(int k=9;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print(+j+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q3 Pyramid Pattern 3
+     
+        *
+	 * * 
+	* * *
+     * * * *
+    * * * * *
+   * * * * * *
+  * * * * * * *
+ * * * * * * * *
+* * * * * * * * *
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q3p3
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=9;i++)
+		{ 
+	        for(int k=9;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print("* ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+
+/*
+Assignment 3 Q3 Pyramid pttern 4
+     
+        1
+       121
+      12321
+     1234321
+    123454321
+   12345654321
+  1234567654321 
+ 123456787654321 
+12345678987654321
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q3p4
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=9;i++)
+		{ 
+	        for(int k=9;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print(j);
+		    for(int l=i-1;l>0;l--)
+			System.out.print(l);	
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q3 Pyramid pttern 5
+        9
+	 898
+      78987
+     6789876
+    567898765
+   45678987654
+  3456789876543
+ 234567898765432
+12345678987654321
+		
+
+*/
+import java.io.*;
+import java.util.*;
+class A3q3p5
+{
+    public static void main(String args[])
+	{	
+		for(int i=9;i>=1;i--)
+		{ 
+	        for(int k=i;k>=1;k--)
+			System.out.print(" ");	
+			for(int j=i;j<=9;j++)
+			System.out.print(j);
+		    for(int k=8;k>=i;k--)
+			System.out.print(k);
+		   
+			
+			System.out.println();	
+		}
+	}
+}
+//.............................................................................................................................
+
+
+
+/*
+Assignment 3 Q3 Pyramid pttern 6
+     
+* * * * * * * * *
+ * * * * * * * *
+  * * * * * * *
+   * * * * * *
+    * * * * *
+     * * * *
+     * * *
+      * *
+	 *
+*/
+import java.io.*;
+import java.util.*;
+class A3q3p6
+{
+    public static void main(String args[])
+	{	
+		for(int i=9;i>=1;i--)
+		{ 
+	        for(int k=9;k>i;k--)
+			System.out.print(" ");	
+			for(int j=i;j>=1;j--)
+			System.out.print("* ");
+			
+			System.out.println();	
+		}
+	}
+}
+//.............................................................................................................................
+
+
+/*
+Assignment 3 Q3 pttern 7
+     
+9 9 9 9 9 9 9 9 9
+ 8 8 8 8 8 8 8 8 
+  7 7 7 7 7 7 7
+   6 6 6 6 6 6
+    5 5 5 5 5
+     4 4 4 4
+      3 3 3
+	 2 2 
+	  1
+*/
+import java.io.*;
+import java.util.*;
+class A3q3p7
+{
+    public static void main(String args[])
+	{	
+		for(int i=9;i>=1;i--)
+		{ 
+	        for(int k=9;k>i;k--)
+			System.out.print(" ");	
+			for(int j=i;j>=1;j--)
+			System.out.print(+i+" ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q3 full Pyramid 
+     *
+    * *
+   * * *
+  * * * * 
+ * * * * * 
+* * * * * *
+
+
+*/
+import java.io.*;
+import java.util.*;
+class A3flpr
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=6;i++)
+		{ 
+	        for(int k=6;k>i;k--)
+			System.out.print(" ");	
+			for(int j=1;j<=i;j++)
+			System.out.print("* ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+
+/*
+Assignment 3 Q3 Inverted full Pyramid 
+     
+* * * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
+*/
+import java.io.*;
+import java.util.*;
+class A3ifp
+{
+    public static void main(String args[])
+	{	
+		for(int i=6;i>=1;i--)
+		{ 
+	        for(int k=6;k>i;k--)
+			System.out.print(" ");	
+			for(int j=i;j>=1;j--)
+			System.out.print("* ");
+			
+			System.out.println();	
+		}
+	}
+}
+
+//.............................................................................................................................
+/*
+Assignment 3 Q3 Half Pyramid 
+
+*
+**
+***
+****
+*****
+******
+
+*/
+import java.io.*;
+class A3q3hp
+{
+    public static void main(String args[])
+	{	
+		for(int i=1;i<=6;i++)
+		{
+			for(char j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+//.............................................................................................................................
+/*
+Assignment 3 Q3 inverted half Pyramid 
+******
+*****
+****
+***
+**
+*
+*/
+import java.io.*;
+class A3q3ihp
+{
+    public static void main(String args[])
+	{	
+		for(int i=6;i>=1;i--)
+		{
+			 
+			for(int j=1;j<=i;j++)
+			System.out.print("*");
+			
+			System.out.println();	
+		}
+	}
+}
+
+
+
+//.............................................................................................................................
+/*
+Assignment 3 Q3 hollow inverted half Pyramid 
+******
+*   *
+*  *
+* *
+**
+*
+*/
+import java.io.*;
+class A3qihlp
+{
+    public static void main(String args[])
+	{	
+		for(int i=6;i>=1;i--)
+		{
+			 
+			for(int j=1;j<=i;j++)
+			{
+				if((i==6||j==1)||(i==j))
+			     System.out.print("*");
+				
+			    else 
+                     System.out.print(" ");			
+									 
+			}
+			System.out.println();	
+		}
+	}
+}
+
+
+
+
+//.............................................................................................................................
+
+//*
+Assignment 3 Q3 hollw full Pyramid 
+     *
+    * *
+   *   *
+  *     * 
+ *       * 
+* * * * * * 
+
+
+*/
+import java.io.*;
+import java.util.*;
+class Pr
+{
+    public static void main(String args[])
+	{	
+	  for(int i=1; i<=6; i++)
+       {
+        /* Print trailing spaces */
+        for(int k=i; k<6; k++)
+        System.out.print(" ");
+        
+
+        /* Print hollow pyramid */
+        for(int j=1; j<=(2*i-1); j++)
+         {
+            /*
+             * Print star for last row (i==rows),
+             * first column(j==1) and for
+             * last column (j==(2*i-1)).
+             */ 
+			 
+			
+            if(j==1||j==(2*i-1))
+            {
+                System.out.print("*");
+            }
+            else
+            {
+               System.out.print(" ");
+            }
+			
+			
+         }
+		 System.out.println();
+             if(i==5)
+			  for(int l=1;l<=i;l++)
+				System.out.print("* ");
+		        
+			
+				
+	   }
+	}
+}
+
+//.............................................................................................................................
+
+
+
+
