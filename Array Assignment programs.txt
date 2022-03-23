@@ -1,0 +1,513 @@
+/*
+1. Write a program to merge two arrays of integers by reading one number at a time from each array 
+until one of the array is exhausted, and then concatenating the remaining numbers.
+ 
+ Input: [23,60,94,3,102] and [42,16,74]
+ Output: [23,42,60,16,94,74,3,102]
+*/
+//================================================================================================
+// Method 1 using for loop                      
+//================================================================================================
+import java.util.*;
+class Altmerg1
+{
+   public static void main(String args[])
+   {
+	   //System.out.println("Enter array1 Elements ");
+	   //Scanner sc=new Scanner(System.in);
+     int a[]=new int[]{23,60,94,3,102,111,151,145,456,12};    // declration and initialization of array
+	 int b[]=new int[]{42,16,74,1,4,45};
+	 
+	 int al=a.length;
+	 int bl=b.length;
+	 int cl=a.length+b.length;
+	 int counter = 2*bl;
+     int c[]=new int[cl];	// declaring new array to merge both arrays
+      	
+		int j=0,k=1;
+		
+		System.out.println("Length of array a="+al);
+		System.out.println("Length of array b="+bl);
+		System.out.println("Length of array c="+cl);
+      for (int i=0;i<al;i++) // excutes from 0 to array length of larger array 
+	   {  
+	      if (i<bl)// (works when i=0,1,2)
+		   {	  
+		      c[j] =a[i]; 
+	          c[k]=b[i];
+              j=j+2;
+		      k=k+2;
+		   }
+		  else // works when i=3,4
+		   {  
+		     c[counter]=a[i];
+			   ++counter;
+	        }
+				  
+	    } 
+	   
+	
+       for (int i:c)// printing merged array
+          System.out.print(" "+i);
+   
+   
+   }
+
+}
+
+/*
+1. Write a program to merge two arrays of integers by reading one number at a time from each array 
+until one of the array is exhausted, and then concatenating the remaining numbers.
+ 
+ Input: {23,60,94,3,102,111,151,145,456,12}and {42,16,74,1,4,45,4,1,5,45,48,06,7,8,9,1,25}
+ Output: { 23,42,60,16,94,74,3,1,102,4,111,45,151,4,145,1,456,5,12,45,48,6,7,8,9,1,25}
+*/
+//================================================================================================
+//                      Method 2 using while loop
+//================================================================================================
+import java.util.*;
+class Altmerg2
+{
+   public static void main(String args[])
+   {
+	   //System.out.println("Enter array1 Elements ");
+	   //Scanner sc=new Scanner(System.in);
+     int a[]=new int[]{23,60,94,3,102,111,151,145,456,12};    // declration and initialization of array
+	 int b[]=new int[]{42,16,74,1,4,45,4,1,5,45,48,06,7,8,9,1,25};
+	 
+	 int al=a.length;
+	 int bl=b.length;
+	 
+	 int cl=a.length+b.length;
+	 
+	 
+     int c[]=new int[cl];	// declaring new array to merge both arrays
+      	
+		int i=0 , j=0 , k=0;
+		
+		System.out.println("Length of array a="+al);
+		System.out.println("Length of array b="+bl);
+		System.out.println("Length of array c="+cl);
+		while(i<al && j<bl)
+		{
+			c[k++]=a[i++];
+			c[k++]=b[j++];	
+				
+		}
+      
+	    while(i<al)
+		{
+			c[k++]=a[i++];
+				
+				
+		}
+		
+	     while(j<bl)
+		{
+			
+			c[k++]=b[j++];	
+				
+		}
+		 
+		 System.out.println("Merged array is");
+       for (int x:c)// printing merged array
+          System.out.print(x+" ,");
+   
+   
+   }
+
+}
+
+/*
+2.Write a program which takes an array of integers and prints the running average of 3 consecutive integers. 
+In case the array has fewer than 3 integers, there should be no output.
+ Input: [5,85,14,39,140]
+ Output: [18, 46, 88] 
+*/
+import java.io.*;
+import java.util.*;
+
+class Aravg
+{
+  public static void main(String []args)
+  {
+    System.out.println("Enter size of array");
+	Scanner sc= new Scanner(System.in);
+	int al= sc.nextInt();
+	
+    int A[]=new int[al];
+	
+     System.out.println("Enter  array Elements");
+	 for(int i=0;i<al;i++)
+		  A[i] =sc.nextInt();
+	 
+	 System.out.print("Array is A[");
+	 for(int i=0;i<al;i++)
+		 System.out.print(+A[i]+",");
+	 
+          System.out.println("]");
+		  
+	System.out.println(" ");
+	int k=3;
+	 System.out.print("Average of three consecutive Number of Array [");
+      for (int i=0;i<(al-2);i++)
+    {
+      int sum=0;
+	  float avg= 0;
+	   for(int j=i;j<k;j++)
+	  {
+		sum= sum+A[j];
+		avg= (float)sum/3;
+		
+	  }
+	  k++;
+	  System.out.print(+avg+",");
+	}
+    System.out.print("]");
+  }
+}
+
+
+//3. Write a program which generates the series 1,4,27,16,125,36
+// this will be genrated by 1^3,2^2,  3^3,4^2,  5^3,6^2 
+import java.math.*;
+import java.util.*;
+
+class Numser
+{
+   public static void main(String []args)
+   { 
+	  System.out.println("Enter the Number upto which you want series ");
+	  Scanner sc= new Scanner(System.in);
+	  int n= sc.nextInt();
+      int num[]= new int[n];
+	  int []ser= new int[n];
+	  int counter = 1;
+	  System.out.println("Number series ");
+	  for (int i=1;i<=n;i++)
+	  {  
+	    for(int j=3;j>=2;j--)
+	    {
+		  
+	       System.out.print(" "+(int)Math.pow(counter++,j)+", ");
+	    }
+		
+	  }
+   }
+   
+   
+}
+
+
+/*
+4.Given an array of integers, print whether the numbers are in ascending order or in descending order or 
+in random order without sorting
+ Input: [5,14,35,90,139]     Output: Ascending 
+ Input: [88,67,35,14,-12]    Output: Descending
+ Input: [65,14,129,34,7]     Output: Random 
+
+*/
+import java.io.*;
+import java.util.*;
+
+class Arod
+{
+  public static void main(String []args)
+   {
+	  
+     System.out.print("How many numbers you want to Enter ");
+	 Scanner sc= new Scanner(System.in);
+	 int Alengt= sc.nextInt();
+	
+     int A[]=new int[Alengt+1];
+	
+     System.out.println("Enter the Numbers ");
+	 
+	 for(int i=0;i<Alengt;i++)
+		  A[i] =sc.nextInt();
+	 
+	 System.out.print("Array is A[");
+	 for(int i=0;i<Alengt;i++)
+		 System.out.print(+A[i]+",");
+	 
+          System.out.println("]");
+	
+	 int As=1,Ds=1 ;
+      for (int i=0;i<(Alengt-1);i++)
+	   { 
+             int p=i;
+		  if(A[p]<A[++p])
+		     ++As;
+		 else
+		   if(A[p]>A[++p])
+		      ++Ds; 	
+	   }  
+		  
+		  System.out.println("As="+As);
+		  System.out.println("DS="+Ds);
+
+		if (As==Alengt)
+		   System.out.println("Array is in Ascending order");
+		else 
+			if(Ds==Alengt)
+					System.out.println("Array is in Descending order");
+			    else 
+				    System.out.println("Array is in Random order");
+	 
+   }
+}
+
+
+/*
+5.Print the third-largest number in an array without sorting it 
+Input: [ 24,54,31,16,82,45,67]
+Output: 54 (82 and 67 are the largest and second-largest)
+*/
+
+import java.io.*;
+import java.util.*;
+
+class Arthirdlarge
+{
+  public static void main(String []args)
+   {
+     System.out.println("Enter size of array");
+	 Scanner sc= new Scanner(System.in);
+	 int Alengt= sc.nextInt();
+	
+     int A[]=new int[Alengt+1];
+	
+     System.out.println("Enter  array Elements");
+	 for(int i=0;i<Alengt;i++)
+		  A[i] =sc.nextInt();
+	 
+	 System.out.print("Array is A[");
+	 for(int i=0;i<Alengt;i++)
+		 System.out.print(+A[i]+",");
+	 
+          System.out.println("]");
+		  
+	 System.out.println(" ");
+	   int first,second,third;
+	  first = second = third = A[0];
+      for (int i=1;i<Alengt;i++)
+	   { 
+            
+		  if( A[i]>first)
+		   { 
+			 third = second;
+             second = first;
+             first = A[i];			 
+		   
+		   } else if( A[i]>second){ 
+			  third = second;
+			  second = A[i];
+			}else if( A[i]>third){ 
+			  third =  A[i];
+			}else //second = A[i];
+			  
+	   }	
+		
+		
+		  System.out.println("third Largest = "+third);
+		  System.out.println("second Largest = "+second);
+		  System.out.println("first Largest = "+first);
+		 
+		
+		 
+	   
+			
+   }
+}
+
+/*
+
+
+5 (b).Print the third-smallest number in an array without sorting it 
+Input: [ 24,54,31,16,82,45,67]
+Output: 31 (16 and 24 are the smallest and second-smallest)
+*/
+
+import java.io.*;
+import java.util.*;
+
+class Arthirdsmall
+{
+  public static void main(String []args)
+   {
+     System.out.println("Enter size of array");
+	 Scanner sc= new Scanner(System.in);
+	 int Alengt= sc.nextInt();
+	
+     int A[]=new int[Alengt+1];
+	
+     System.out.println("Enter  array Elements");
+	 for(int i=0;i<Alengt;i++)
+		  A[i] =sc.nextInt();
+	 
+	 System.out.print("Array is A[");
+	 for(int i=0;i<Alengt;i++)
+		 System.out.print(+A[i]+",");
+	 
+          System.out.println("]");
+		  
+	 System.out.println(" ");
+	   int first,second,third;
+	  first = second = third = A[0];
+      for (int i=1;i<Alengt;i++)
+	   { 
+            
+		  if( A[i]<first)
+		   { 
+			 third = second;
+             second = first;
+             first = A[i];			 
+		   
+		   } else if( A[i]<second){ 
+			  third = second;
+			  second = A[i];
+			}else if( A[i]<third){ 
+			  third =  A[i];
+			}
+			  
+	   }	
+		
+		
+		  System.out.println("third smallest = "+third);
+		 
+		
+		 
+	   
+			
+   }
+}
+
+/*
+6.Print the array in Ascending order or Discending order with user choice 
+Input: [ 24,54,31,16,82,45,67]
+Output Ascending: [16,24,31,45,54,67,82]
+*/
+
+import java.io.*;
+import java.util.*;
+
+class Sortingobj
+{
+	Scanner sc= new Scanner(System.in);
+	  int Alengt;
+	  int A[];
+	  int B[];
+	//Sortingobj obj2= new Sortingobj();
+      double a = sc.nextdouble();
+	  
+	
+  public int []setdata()
+   {
+      System.out.println("Enter How many Numbers do you want to arrange");
+	  Scanner sc= new Scanner(System.in);
+	  Alengt= sc.nextInt();
+	
+      int A[]= new int[Alengt];
+	  
+	 
+      System.out.println("Enter Numbers");
+	  for(int i=0;i<Alengt;i++)
+		  A[i] =sc.nextInt();
+	 
+	  System.out.print("Array you Entered is A[");
+	  for(int i=0;i<Alengt;i++)
+		 System.out.print(+A[i]+",");
+	 
+          System.out.println("]");
+		  
+		  return A;
+   }	  
+		  
+	public void sorting(int []arr,int y)	  
+	{
+		int more1=y;
+	    System.out.println("In Which order do you want 1.Acsending  2.Decending ");
+	   int choice = sc.nextInt();
+	// System.out.println("value of Alength= "+Alengt);
+	    
+		//Alengt=arr.length;
+		//int B[]= new int[Alengt];
+	    B=arr;
+	   int temp;
+	
+	   switch(choice)
+	   {
+         case 1: for (int i=0;i<Alengt;i++)
+	           {
+		          for (int j=i+1;j<Alengt;j++)
+		          {
+						//System.out.println("inside inner loop");  
+			        if(B[i]>B[j])
+			       { 
+		            temp=B[i];
+				     B[i]=B[j];
+				     B[j]=temp;
+			       }
+			      }	
+		        }
+	   
+	      break;
+	   
+	     case 2:for (int i=0;i<Alengt;i++)
+	            {
+		           for (int j=i+1;j<Alengt;j++)
+		           {
+	     		      if(B[i]<B[j])
+		     	      { 
+		               temp=B[i];
+				       B[i]=B[j];
+				       B[j]=temp;
+			          }
+		           }
+			    }	
+	     
+	      break;
+	  
+	     default:
+	     System.out.println("You Entered wrong choice");
+	     break;
+	  
+	    } 
+	  
+	  System.out.print("Array After Sorting is A[");
+	  for(int i=0;i<Alengt;i++)
+		 System.out.print(+B[i]+",");
+	     System.out.println("]");
+		 
+		System.out.println("Do you want to access again press 1 for Yes , Press 2 for No");
+		  int more = sc.nextInt();
+		 switch(more)
+		 {
+			case 1:sorting(B,more);
+			       break;
+			case 2: break; 
+			default : System.out.println("You Entered wrong Number ");
+			       break;
+			 
+			 
+		 }
+          		 
+		 
+    }
+
+   
+   public static void main(String []args)
+   {
+	
+     Sortingobj obj1= new Sortingobj();
+	int	Array[]=obj1.setdata();
+	 obj1.sorting(Array,1);
+
+	
+   }
+}
+	   
+
+
+
+
