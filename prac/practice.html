@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(()=>{
+            $("#add").click(()=>{
+                console.log("add clicked");
+                let input = {
+                    empno : $("#empno").val(),
+                    ename : $("#empname").val(),
+                    esal : $("#esal").val(),
+                };
+                // console.log(input);
+                
+                let ajaxparams = {
+                    data : input,
+                    url: "http://localhost:900/addEmployee",
+                    type : 'get',
+                    datatype : 'json',
+                    success: (output)=>{
+                        console.log("success"+output);
+                    },
+                    error: (err)=>{
+                        console.log("error"+err);
+                    }
+                };
+                $.ajax(ajaxparams);
+
+            });
+            $("#empno").blur(()=>{
+                console.log("blur");
+
+                let input = $("#empno").val();
+
+                let ajaxparams= {
+                
+                    data : input,
+                    url: "http://localhost:900/getEmployee",
+                    type : 'get',
+                    datatype : 'json',
+                    success: (output)=>{
+                        console.log("success"+output.status);
+                    },
+                    error: (err)=>{
+                        console.log("error"+err);
+                    }
+                
+                };
+                $.ajax(ajaxparams);
+
+            });
+            $("#empname").blur(()=>{
+                console.log("blur");
+            });
+            $("#esal").blur(()=>{
+                console.log("blur");
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="empno" placeholder="empno"><br>
+    <input type="text" id="empname" placeholder="empname"><br>
+    <input type="text" id="esal" placeholder="emp sal"><br><br>
+    <button id="add">Add Employee</button>
+    <button id="update">Update Employee</button>
+    <button id="delete">Delete Employee</button>
+    <button id="showall">Show Employee</button>
+</body>
+</html>
